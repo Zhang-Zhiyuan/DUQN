@@ -1,0 +1,69 @@
+Namespace(model='RL4RSEnvFeedback', reader='RL4RSDataReader')
+Namespace(seed=19, batch_size=2048, lr=0.003, epoch=2, model_path='env_feedback_model', loss='bce', l2_coef=0.001, feature_dim=16, attn_n_head=2, hidden_dims=[256], dropout_rate=0.2, train_file='dataset/rl4rs/rl4rs_b_train.csv', val_file='dataset/rl4rs/rl4rs_b_test.csv', test_file='dataset/rl4rs/rl4rs_b_test.csv', n_worker=4, data_separator='@', item_meta_file='dataset/rl4rs/item_info.csv', max_seq_len=50, meta_data_separator=' ')
+Loading data files
+Load item meta data
+{'length': 586024, 'n_item': 283, 'item_vec_size': 40, 'user_portrait_len': 42, 'max_seq_len': 50, 'n_feedback': 2}
+epoch 1 training
+Iteration 10, loss: 0.6161167562007904
+Iteration 20, loss: 0.5979300439357758
+Iteration 30, loss: 0.5881909370422364
+Iteration 40, loss: 0.5835549637675286
+Iteration 50, loss: 0.5798902428150177
+Iteration 60, loss: 0.5767932732899984
+Iteration 70, loss: 0.5739533679825919
+Iteration 80, loss: 0.5713790751993656
+Iteration 90, loss: 0.5690274059772491
+Iteration 100, loss: 0.5666169285774231
+Iteration 110, loss: 0.5596996879577637
+Iteration 120, loss: 0.5558929699659347
+Iteration 130, loss: 0.5531548821926117
+Iteration 140, loss: 0.550128908753395
+Iteration 150, loss: 0.5473542720079422
+Iteration 160, loss: 0.5451209431886673
+Iteration 170, loss: 0.5432677006721497
+Iteration 180, loss: 0.5416340935230255
+Iteration 190, loss: 0.5402657544612884
+Iteration 200, loss: 0.5393740844726562
+Iteration 210, loss: 0.5383861637115479
+Iteration 220, loss: 0.5380102723836899
+Iteration 230, loss: 0.5373228114843368
+Iteration 240, loss: 0.5368106043338776
+Iteration 250, loss: 0.5365750682353974
+Iteration 260, loss: 0.5360581231117248
+Iteration 270, loss: 0.535573422908783
+Iteration 280, loss: 0.5356066000461578
+Epoch 1; time 541.1276
+epoch 1 validating; auc: 0.7787
+Model (checkpoint) saved to env_feedback_model.model
+epoch 2 training
+Iteration 10, loss: 0.5364775002002716
+Iteration 20, loss: 0.5369515538215637
+Iteration 30, loss: 0.5354627668857574
+Iteration 40, loss: 0.5350491434335709
+Iteration 50, loss: 0.5347379863262176
+Iteration 60, loss: 0.5342913389205932
+Iteration 70, loss: 0.5340428258691515
+Iteration 80, loss: 0.5343307375907898
+Iteration 90, loss: 0.5344245354334514
+Iteration 100, loss: 0.534444442987442
+Iteration 110, loss: 0.5341902023553848
+Iteration 120, loss: 0.5338133996725083
+Iteration 130, loss: 0.5339495021104813
+Iteration 140, loss: 0.5341905927658082
+Iteration 150, loss: 0.5341724401712418
+Iteration 160, loss: 0.5343762880563736
+Iteration 170, loss: 0.5345777136087417
+Iteration 180, loss: 0.5344710528850556
+Iteration 190, loss: 0.5343973898887634
+Iteration 200, loss: 0.534339366555214
+Iteration 210, loss: 0.5341403418779374
+Iteration 220, loss: 0.5343965423107148
+Iteration 230, loss: 0.534263254404068
+Iteration 240, loss: 0.5339620006084442
+Iteration 250, loss: 0.5339492845535279
+Iteration 260, loss: 0.5339356875419616
+Iteration 270, loss: 0.5339127200841903
+Iteration 280, loss: 0.5336258918046951
+Epoch 2; time 537.6662
+epoch 2 validating; auc: 0.7824
+Model (checkpoint) saved to env_feedback_model.model

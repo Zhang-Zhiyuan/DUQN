@@ -4,6 +4,10 @@
 
 DUQN is the codebase for the public dataset experiment segment of the "User Response Modeling in Reinforcement Learning for Ads Allocation" study. This project aims to optimize ad allocation through reinforcement learning techniques.
 
+## Dataset
+
+A fragment of the RL4RS dataset is provided in the `dataset` folder for running and debugging the code. For the complete dataset, please visit [RL4RS GitHub Repository](https://github.com/fuxiAIlab/RL4RS).
+
 ## Installation Guide
 
 To set up the DUQN environment, follow these steps:
